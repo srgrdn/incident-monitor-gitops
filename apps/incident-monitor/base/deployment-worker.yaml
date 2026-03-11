@@ -13,8 +13,6 @@ spec:
       labels:
         app: incident-worker
     spec:
-      imagePullSecrets:
-        - name: ghcr-registry
       containers:
         - name: worker
           image: ghcr.io/srgrdn/incident-monitor/worker:0.1.0

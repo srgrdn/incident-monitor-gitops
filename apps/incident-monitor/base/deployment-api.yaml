@@ -13,8 +13,6 @@ spec:
       labels:
         app: incident-api
     spec:
-      imagePullSecrets:
-        - name: ghcr-registry
       containers:
         - name: api
           image: ghcr.io/srgrdn/incident-monitor/api:0.1.0
