@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - ../../base
 images:
-  - name: registry.gitlab.com/sgrudinin/incident-monitor/api
+  - name: ghcr.io/srgrdn/incident-monitor/api
     newTag: 0.1.0
-  - name: registry.gitlab.com/sgrudinin/incident-monitor/worker
+  - name: ghcr.io/srgrdn/incident-monitor/worker
     newTag: 0.1.0

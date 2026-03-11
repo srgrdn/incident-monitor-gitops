@@ -6,7 +6,7 @@ metadata:
 spec:
   project: incident-monitor
   source:
-    repoURL: https://gitlab.com/sgrudinin/incident-monitor-gitops.git
+    repoURL: https://github.com/srgrdn/incident-monitor-gitops.git
     targetRevision: main
     path: apps/incident-monitor/overlays/dev
   destination:

@@ -14,10 +14,10 @@ spec:
         app: incident-api
     spec:
       imagePullSecrets:
-        - name: gitlab-registry
+        - name: ghcr-registry
       containers:
         - name: api
-          image: registry.gitlab.com/sgrudinin/incident-monitor/api:0.1.0
+          image: ghcr.io/srgrdn/incident-monitor/api:0.1.0
           ports:
             - containerPort: 8080
           readinessProbe:

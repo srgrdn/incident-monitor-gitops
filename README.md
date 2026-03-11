@@ -10,4 +10,4 @@
 
 ## Важно для private registry
 
-В namespace `incident-monitor` должен существовать `imagePullSecret` с именем `gitlab-registry`.
+В namespace `incident-monitor` должен существовать `imagePullSecret` с именем `ghcr-registry`.

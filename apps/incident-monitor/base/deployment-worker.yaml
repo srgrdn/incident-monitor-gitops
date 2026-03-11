@@ -14,10 +14,10 @@ spec:
         app: incident-worker
     spec:
       imagePullSecrets:
-        - name: gitlab-registry
+        - name: ghcr-registry
       containers:
         - name: worker
-          image: registry.gitlab.com/sgrudinin/incident-monitor/worker:0.1.0
+          image: ghcr.io/srgrdn/incident-monitor/worker:0.1.0
           env:
             - name: API_URL
               value: http://incident-api:8080
