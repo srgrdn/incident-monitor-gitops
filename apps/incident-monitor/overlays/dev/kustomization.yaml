@@ -4,6 +4,6 @@ resources:
   - ../../base
 images:
   - name: ghcr.io/srgrdn/incident-monitor/api
-    newTag: 589f60f7432e6de8aa96a48773d11b5f9fb0871d
+    newTag: 16f6dc90de8dd022bf5c91510d2fec1947dcfe2b
   - name: ghcr.io/srgrdn/incident-monitor/worker
-    newTag: 589f60f7432e6de8aa96a48773d11b5f9fb0871d
+    newTag: 16f6dc90de8dd022bf5c91510d2fec1947dcfe2b
