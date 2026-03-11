@@ -7,3 +7,7 @@
 - `argocd/` — Application/AppProject манифесты
 - `apps/incident-monitor` — kustomize база и env overlays
 - `clusters/k3s-test` — cluster-specific включение приложений
+
+## Важно для private registry
+
+В namespace `incident-monitor` должен существовать `imagePullSecret` с именем `gitlab-registry`.
