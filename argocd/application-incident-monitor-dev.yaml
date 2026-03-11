@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: incident-monitor-dev
+  namespace: argocd
+spec:
+  project: incident-monitor
+  source:
+    repoURL: https://gitlab.com/sgrudinin/incident-monitor-gitops.git
+    targetRevision: main
+    path: apps/incident-monitor/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: incident-monitor
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

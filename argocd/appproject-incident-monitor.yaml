@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: incident-monitor
+  namespace: argocd
+spec:
+  description: Incident Monitor project
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: incident-monitor
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
